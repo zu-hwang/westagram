@@ -12,7 +12,11 @@ a {
   color: #262626;
 }
 
-
+form, input, button{
+  box-shadow: none;
+  outline: none; 
+  /* 인풋장 선택시 파란줄 없애기 */
+}
 
 
 
