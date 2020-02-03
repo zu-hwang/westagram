@@ -1,0 +1,571 @@
+/*  
+ *
+ *  네비게이션 시작
+ *
+ */
+
+
+.header-nav {
+  /* background-color: yellow; */
+  border-bottom : 1px solid #dbdbdb;
+  background-color: #fff;
+  height: 77px;
+  position: fixed;
+  /* top : 0;
+  left: 0; */
+  width: 100%;
+  z-index: 6;
+}
+
+
+.header-nav .container {
+  /* border-right: 1px solid #dbdbdb;
+  border-left: 1px solid #dbdbdb; */
+width: 935px;
+height: 100%;
+margin: 0 auto;
+padding : 26px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.header-nav img {
+  /* height: 25px; */
+  max-height: 30px;
+  position: relative;
+  top: 2px;
+}
+
+.right {
+  display: flex;
+  position: relative;
+  width : 25%;
+  height: 36px;
+  align-items: center;
+}
+
+.right div:first-child { 
+  /* logo-icon warp*/
+  height: 25px;
+  padding-right: 16px;
+}
+.right div:first-child img {
+  height: 25px;
+  position: relative;
+  top : 0px;
+}
+
+.right div:last-child {
+  /* log-text warp*/
+  /* 여기 보더 라인넣는것 말고 배경화면 방식으로 하는거는 오또케햄? 
+  나중에 트랜지션 넣는 듯 한딩 그래서
+  div태그로 넣은것 같은뒝..
+  */
+  border-left: 1px solid #262626; 
+  padding-left: 16px;
+  height: 30px;
+  width: 130px;
+}
+.right div:last-child img {
+  width: 103px;
+  height: 30px;
+  
+}
+.border {
+  /* background-color: #262626; */
+  /* width: 1px; */
+}
+
+.left {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left div {
+  padding-left :  28px;
+}
+
+.left div:last-child {
+  padding-right: 0px;
+}
+.left img {
+  height: 24px;
+}
+.img-explore {
+  height: 28px;
+}
+.center {
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-wrap input {
+  width : 215px;
+  height : 28px;
+  border-radius: 3px;
+  border : 1px solid #dbdbdb;
+  background-color: #fafafa;
+  position: relative;
+  display: flex;
+  align-items: cen;
+}
+
+.search-icon {
+  background-color: lawngreen;
+  background-image: url('../img/searchicon.png') no-repeat -450px -688px ; 
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 5px;
+  margin-right: 6px;
+  z-index: 5;
+}
+
+.search-up {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+
+.search-up span {
+  font-size: 0.85em;
+  font-weight: normal;
+  color: #999;
+  z-index: 5;
+}
+
+
+/*  
+ *
+ *  메인화면 시작
+ *
+ */
+
+
+ main {
+   width: 935px;
+   /* background-color: lawngreen; */
+   height: 100%;
+   padding-top: 127px;
+ }
+
+ .feeds {
+   /* background-color: lightblue; */
+   width: 100%;
+   height: 700px;
+   margin-right: 28px;
+   width: 614px;
+ }
+
+ article {
+   width: 100%;
+   border: 1px solid #dbdbdb;
+   border-radius: 3px;
+   background-color: #fff;
+
+ }
+ 
+
+ .main-right {
+  /* background-color: blueviolet;  */
+  width: 293px;
+   
+ }
+
+.my-pic-wrap {
+  width: 50px;
+  height: 50px;
+}
+
+.my-pic-wrap img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.my-pic-text {
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  position: relative;
+}
+
+.my-pic-text div:first-child {
+  font-weight: 500;
+  position: relative;
+  top: 8px;
+}
+.my-pic-text div:last-child {
+  font-weight: normal;
+  font-size: small;
+}
+
+
+.my-profile-wrap {
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+}
+
+
+.side-box {
+  margin-top: 12px;
+  height: 223px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.side-box:last-child {
+  height: 194px;
+}
+.side-list-wrap {
+  height: 173px;
+}
+.side-list {
+  overflow: scroll;
+  /* background-color: rgba(55, 55, 55, .5); */
+  height: 100%;
+  padding-left: 16px;
+  margin-top: 8px;
+}
+
+.side-title {
+  padding  : 4px 16px;
+}
+
+.side-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 16px;
+  position: relative;
+}
+
+.side-title div:first-child {
+  color: #999 ;
+  font-weight: bold;
+}
+
+.side-title div:last-child {
+  color: #262626;
+  font-size: small;
+  font-weight: 400;
+  position: relative;
+  top : -2px;
+}
+
+
+
+
+
+/* 사이드 유저 정보 */
+
+
+.user-pic-wrap {
+  width: 34px;
+  height: 34px;
+}
+
+.user-profile-wrap img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.user-profile-text {
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  position: relative;
+  /* top : -4px; */
+  width: 65%;
+}
+
+.user-profile-text div:first-child {
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  top: -1px;
+}
+.user-profile-text div:last-child {
+  font-weight: normal;
+  font-size: 12px;
+  color : #999;
+}
+
+
+.user-profile-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  z-index: -1;
+}
+
+
+.side-foot {
+  margin-top: 12px;
+  color: #c7c7c7;
+  font-size: 12px;
+}
+
+.side-foot ul {
+  margin-right: 6px;
+  margin-bottom: 12px;
+}
+.side-foot li {
+  display: inline;
+  line-height: 1.5em;
+
+}
+
+.side-foot li:after {
+  content: ' ・ ';
+}
+.side-foot li:last-child:after {
+  content: '';
+}
+
+
+.side-foot a {
+  color : #c7c7c7;
+}
+
+.follow-btn {
+  padding-right: 16px;
+  float: right;
+  
+}
+
+.follow-btn button {
+  
+  color: #3897f0;
+  /* width: 100%; */
+  border: none;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+
+
+/*
+Feeds 
+*/
+
+article {
+  margin-bottom: 60px;
+}
+.feed-user-id-box {
+  /* overflow: hidden; */
+  height: 60px;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+  padding: 16px;
+  border-bottom: 1px solid #efefef;
+}
+
+.feed-user-pic-wrap {
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.feed-user-pic-wrap img {
+  width: 100%;
+  border-radius: 32px;
+  position: relative;
+  top : -1px;
+}
+
+.feed-user-id {
+  margin-left: 15px;
+  position: relative;
+  top :5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.feed-three-dot-wrap {
+  display: flex;
+  justify-content : flex-end;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 2px;
+}
+.three-dot-menu img {
+  width: 25px;
+  height: 25zpx;
+  /* background-color: yellow; */
+}
+
+
+
+/* 피드 이미지 */
+
+.feed-img-wrap {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 612px; 
+  /* 여기서 높이 지정안하고 이미지 높이 상속받으려면 오케함..ㅠ 노랑이 계속 모여서 듄나 짱남.*/
+  background-color: yellow;
+  border-bottom: 1px solid #efefef;
+}
+.feed-img-wrap img {
+  width: 100%;
+  max-height: inherit;
+}
+
+/* 피드 아이콘 */
+
+.feed-icons-wrap {
+  height: 56px;
+  padding : 16px 0 16px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed-icons-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.feed-icons-wrap img {
+  width: 24px;
+  margin-right : 16px;
+}
+.icon-bookmark > img {
+  margin-right : 0px;
+}
+
+
+
+/* 피드 좋아요 버튼 */
+.feed-like-text-wrap {
+  margin-bottom: 8px;
+}
+.feed-like-text-wrap button {
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+ 
+
+
+/* 피드 댓글 목록*/
+
+.feed-repl-wrap {
+  border-bottom: 1px solid #efefef;
+  padding: 0px 16px 5px 16px;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+}
+.feed-repl-wrap span {
+  padding: 2px 0 ;
+}
+.feed-repl-wrap span a {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.feed-repl-wrap a.user-id {
+  font-weight: bold;
+}
+
+.feed-repl-wrap button.all-repl {
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  padding-left: 3px;
+  color : #c7c7c7;
+}
+
+.feed-repls > span {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 5px;
+
+}
+
+.mention {
+  color : #003569;
+}
+.mention a {
+  color: #003569;
+}
+
+.feed-time  {
+  font-size: 10px;
+  color:#c7c7c7;  
+}
+
+
+.heart-btn {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  float : right;
+  height: 14px;
+  width: 14px;
+  opacity: .5;
+  border: none;
+}
+
+.heart-btn img {
+  width: 100%;
+}
+
+
+
+
+/* 피드 댓글 쓰기 */
+.send-repl-wrap {
+  height: 56px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.send-repl-wrap form {
+  width: 92%;
+  position: relative;
+}
+.send-repl-wrap input {
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  position: relative;
+  top: 3px;
+}
+
+.send-repl-wrap input::placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+  position: relative;
+  top: px;
+}
+
+
+.submit-wrap {
+  position: absolute;
+  right: -44px;
+  bottom: 4px;
+}
+
+.submit-wrap button {
+  color: #003569;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: .5;
+  cursor: pointer;
+}
+
+
