@@ -12,7 +12,7 @@ a {
   color: #262626;
 }
 
-form, input, button{
+.form-div, input, button{
   box-shadow: none;
   outline: none; 
   /* 인풋장 선택시 파란줄 없애기 */
@@ -43,4 +43,19 @@ main {
 
 .show {
   display: block;
+}
+
+.opacity-1-0 {
+  opacity: 1;
+}
+.opacity-0-5 {
+  opacity: 0.5;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
 }
